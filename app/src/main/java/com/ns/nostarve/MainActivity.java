@@ -9,20 +9,27 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button2;
+    Button buttonSup, buttonNGO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        buttonNGO = (Button) findViewById(R.id.buttonNGO);
+        buttonSup = findViewById(R.id.buttonSup);
 
-        button2 = findViewById(R.id.button2);
 
-
-        button2.setOnClickListener(new View.OnClickListener() {
+        buttonSup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, UserList.class);
+                startActivity(intent);
+            }
+        });
+        buttonNGO.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,registration.class);
                 startActivity(intent);
             }
         });
