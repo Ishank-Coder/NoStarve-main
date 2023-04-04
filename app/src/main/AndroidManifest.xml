@@ -21,6 +21,14 @@
             android:name=".Login"
             android:exported="false" />
         <activity
+            android:name=".UserList"
+            android:exported="false" />
+        <activity
+            android:name=".userlist"
+            android:exported="false"
+            android:label="@string/title_activity_userlist"
+            android:theme="@style/Theme.NoStarve.NoActionBar" />
+        <activity
             android:name=".registration"
             android:exported="false" />
         <activity
